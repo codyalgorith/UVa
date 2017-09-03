@@ -119,12 +119,12 @@ int main()
 			ss>>x>>i>>j;
 			
 			if(x=="S")
-			{  //update value at i-1 to i-1 by j
+			{  //update value at i to i by j
 				update(1,1,t,i,i,j);
 			}
 			else if(x=="M")
 			{
-				//print querysum from i-1 to j-1
+				//print querysum from i to j
 				
 				long long result = query(1,1,t,i,j);
 				printf("%lld\n",result);
